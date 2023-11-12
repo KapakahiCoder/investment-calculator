@@ -24,6 +24,8 @@ function App() {
     setduration(+amount);
   }
 
+  const inputIsValid = duration >= 1;
+
   return (
     <>
       <Header />
@@ -37,12 +39,17 @@ function App() {
         expectedReturn={expectedReturn}
         duration={duration}
       />
-      <Results
-        initialInvestment={initialInvestment}
-        annualInvestment={annualInvestment}
-        expectedReturn={expectedReturn}
-        duration={duration}
-      />
+      {!inputIsValid && (
+        <p className="center">Please enter a duration greater than zero.</p>
+      )}
+      {inputIsValid && (
+        <Results
+          initialInvestment={initialInvestment}
+          annualInvestment={annualInvestment}
+          expectedReturn={expectedReturn}
+          duration={duration}
+        />
+      )}
     </>
   );
 }
