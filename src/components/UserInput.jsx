@@ -7,6 +7,7 @@ export default function UserInput(props) {
           <input
             type="number"
             required
+            value={props.initialInvestment}
             onChange={(e) => props.onChangeInitialInvestment(e.target.value)}
           ></input>
         </p>
@@ -15,6 +16,7 @@ export default function UserInput(props) {
           <input
             type="number"
             required
+            value={props.annualInvestment}
             onChange={(e) => props.onChangeAnnualInvestment(e.target.value)}
           ></input>
         </p>
@@ -25,6 +27,7 @@ export default function UserInput(props) {
           <input
             type="number"
             required
+            value={props.expectedReturn}
             onChange={(e) => props.onChangeExpectedReturn(e.target.value)}
           ></input>
         </p>
@@ -33,6 +36,7 @@ export default function UserInput(props) {
           <input
             type="number"
             required
+            value={props.duration}
             onChange={(e) => props.onChangeDuration(e.target.value)}
           ></input>
         </p>
