@@ -3,7 +3,7 @@
 Simple app to calculate how much money you would have accumulated given the initial investment, annual investment, expected interest return, and duration.
 
 Check out the calculator here:
-[Let's Calculate](https://)
+[Let's Calculate](https://simple-react-investment-calc.web.app/)
 
 ### Here's a picture of the initial input screen:
 
